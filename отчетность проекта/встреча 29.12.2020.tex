@@ -1,0 +1,186 @@
+%%%%%%%%%%%%%%%%%%%MAIN_OPTIONS%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper, 14pt]{article}
+
+%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{hyperref}				% гиперссылки
+\usepackage[warn]{mathtext} 		% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+%% Дополнительная работа с математикой
+\usepackage{amsfonts,amssymb,amsthm,mathtools} % AMS
+\usepackage{amsmath}
+\usepackage{icomma} % "Умная" запятая: $0,2$ --- число, $0, 2$ --- перечисление
+
+%% Номера формул
+%\mathtoolsset{showonlyrefs=true} % Показывать номера только у тех формул, на которые есть \eqref{} в тексте.
+
+%%FONTS_Packadges
+\usepackage{euscript} % Шрифт Евклид
+\usepackage{mathrsfs} % Красивый матшрифт
+
+%% Свои команды
+\DeclareMathOperator{\sgn}{\mathop{sgn}}
+
+%% Перенос знаков в формулах (по Львовскому)
+\newcommand*{\hm}[1]{#1\nobreak\discretionary{}
+	{\hbox{$\mathsurround=0pt #1$}}{}}
+
+%%% Работа с картинками
+\usepackage{graphicx}  % Для вставки рисунков
+\graphicspath{{pictures/}{images2/}}  % папки с картинками
+\setlength\fboxsep{3pt} % Отступ рамки \fbox{} от рисунка
+\setlength\fboxrule{1pt} % Толщина линий рамки \fbox{}
+\usepackage{wrapfig} % Обтекание рисунков и таблиц текстом
+\usepackage[section]{placeins}
+\usepackage{subcaption}
+
+%% Работа с таблицами
+\usepackage{array,tabularx,tabulary,booktabs} % Дополнительная работа с таблицами
+\usepackage{longtable}  % Длинные таблицы
+\usepackage{multirow} % Слияние строк в таблице
+
+%%Links
+\hypersetup{
+	colorlinks=true,
+	linkcolor=black,
+	filecolor=magenta,      
+	urlcolor=blue,
+}
+
+%%% Программирование
+\usepackage{etoolbox} % логические операторы
+
+%%% Страница
+\usepackage{extsizes} % Возможность сделать 14-й шрифт
+\usepackage{geometry} % Простой способ задавать поля
+\geometry{top=25mm}
+\geometry{bottom=35mm}
+\geometry{left=20mm}
+\geometry{right=20mm}
+\usepackage{indentfirst}
+%
+\usepackage{fancyhdr} % Колонтитулы
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0mm}  % Толщина линейки, отчеркивающей верхний колонтитул
+%\lfoot{Нижний левый}
+%\rfoot{Нижний правый}
+%\rhead{Верхний правый}
+%\chead{Верхний в центре}
+%\lhead{Верхний левый}
+% \cfoot{Нижний в центре} % По умолчанию здесь номер страницы
+
+\usepackage{setspace} % Интерлиньяж
+%\onehalfspacing % Интерлиньяж 1.5
+%\doublespacing % Интерлиньяж 2
+%\singlespacing % Интерлиньяж 1
+
+\usepackage{multicol,caption}
+
+\newenvironment{Figure}
+{\par\medskip\noindent\minipage{\linewidth}}
+{\endminipage\par\medskip}
+
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{xcolor}
+%%% Зачеркнутый текст
+\usepackage[normalem]{ulem}
+
+
+\author{Каграманян Давид}
+\title{Материал встречи}
+\date{\today}
+
+\begin{document}
+	\thispagestyle{empty}
+	\hfill\begin{minipage}{0.4\textwidth}
+	    Каграманян Давид Геворгович БИВ184\\
+	    dgkagramanyan@miem.hse.ru\\
+	    Проект 398\\
+
+	\end{minipage}%
+
+	\begin{center}
+
+
+		\textbf{\textit{Победит}}
+		
+		\vspace{1ex}
+		
+		\textbf{Итог встречи 29.12.2020}
+	
+
+	\end{center}
+
+	\section{Объeкт исследований}
+	
+	В проекте рассматривается связка WC-Co с различным процентым соотношением карбида вольфрама и кобальта.
+	Она получена путем жидкофазного спекания.
+	 
+	Перед началом исследований срез сначала шлифуется и полируется с помощью наждачной бумаги и алмазной
+	полировальной пасты. Средняя высота бугров поверхности меньше 1 \textmu м, или 1000 \r A. 
+	
+	\section{Где используется}
+	
+	Основное применение - покрытие бурильных головок, сверел и всего того, что предназначено бурить твердые материалы.
+	 
+	\section{Оборудование и фотографии}
+	 
+	 Сканирующий микроскоп VegaTescan. Цифры, входящие в состав названия файла, указывают на процентные соотношения карбида вольфрама и кобальта (уточнить как именно).
+
+	На каждой фотографии присутствует линейка. Ее длина для данного микроскопа  50 \textmu м.
+	Изображение слева получено на основе отраженных электронов, а справа - на поглощенных. 
+	Зерно кобальта увидеть нельзя. Количество частичек карбида прмерно 300 на одной фотографии. 
+	
+		\newpage
+	\section{Анализ сплава и полученных фотографий}
+	
+	В проекте можно рассмотреть такие физические характеристики сплава, как:
+	
+	\begin{itemize}
+		\item микротвердость(по Бренелю)
+		
+		\item ударная вязкость
+		
+		\item кривая наноиндентирования
+		
+		\item износостойкость
+	\end{itemize}
+
+
+	Для использования в качестве входных данных нейросети можно использовать следующие
+	характеристики частиц карбида, полученные при обработке фотографий:
+	
+	\begin{itemize}
+		\item количество соседей 
+		
+		\item количество и типы дыр между частицами
+		
+		\item несоосность форм
+		
+		\item типы границ
+		
+		\item контактные углы
+		
+		\item распределение по формам (площадь, периметр, углы и тд) 
+		
+		\item связность (?)
+	
+		\item расположение 
+	\end{itemize}
+	
+	\section{Методы анализа фотографий}
+	
+	Для определения форм, распределений и прочих характеристик можно использовать готовые 
+	инструменты из области Computer Vision (CV). 
+	Также стоит рассмотреть количественную металлографию. 
+	
+
+	
+
+
+	
+\end{document}
